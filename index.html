@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA Clipper</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 16px; color: #1b1b1b; background: #fff; }
+  h1 { margin-bottom: 0; } .sub { color: #555; margin-top: 4px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 14px; color: #555; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>GTA Clipper</h1>
+<p class="sub">An internal clipping tool for the Crimson Painsmith YouTube channel.</p>
+
+<h2>What it does</h2>
+<p>GTA Clipper runs on the channel owner's computer during our own GTA IV live streams on
+<a href="https://www.youtube.com/channel/UCYol7IXaRwmuh3L2z2XkLnA">Crimson Painsmith</a>. It records the stream, finds the moments where live chat reacts most,
+cuts them into short vertical clips, and uploads them as YouTube Shorts to our own channel.</p>
+
+<h2>How it uses YouTube</h2>
+<ul>
+  <li>It uses the YouTube Data API v3 <code>videos.insert</code> endpoint with the <code>youtube.upload</code> OAuth scope.</li>
+  <li>The only account that signs in is the owner of our channel. The tool is not offered to anyone else.</li>
+  <li>Every upload starts as private, and the owner reviews it in YouTube Studio before publishing.</li>
+  <li>It reads no data from other users' accounts or channels.</li>
+</ul>
+<p>The tool uses YouTube API Services. By using it you agree to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · Contact: icrimsoncodes@gmail.com
+</footer>
+</body>
+</html>
